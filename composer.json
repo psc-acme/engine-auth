@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/engine-auth",
+    "description": "Package engine-auth for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\EngineAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/messenger": "^7.0",
+        "symfony/mailer": "^7.0",
+        "psc-acme/gateway-auth": "^1.0",
+        "psc-acme/plugin-auth": "^1.0",
+        "psc-acme/proxy-auth": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
